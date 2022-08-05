@@ -10,7 +10,7 @@ let arr = [-3,-2,2,3]
 function cubeOdd(arr) {
 
   
-  let cubeResult = []
+  let cubedResult = []
   for(const num of arr) {
     if(num % 2 === 1 || num % 2 === -1) {
       cubeResult.push(num)
