@@ -34,3 +34,27 @@
     }
         
     console.log(calc('jfmgklf8hglbe'))
+
+
+    function calc(x){
+  
+      let charCodeString = x.split('').map(item => item.charCodeAt()).join('')
+      let total1 = charCodeString.split('').map(item => Number(item)).reduce((total, current) => total + current, 0)
+     
+      let replaceSeven = ''
+      for(let i = 0; i < charCodeString.length; i++) {
+        if(charCodeString[i] === '7') {
+          replaceSeven = replaceSeven + '1'
+        } else {
+          replaceSeven = replaceSeven+ charCodeString[i]
+        }
+      }
+    
+        let total3 = replaceSeven.split('').map(item => Number(item)).reduce((total, current) => total + current, 0)
+        let difference = total1 - total3
+        return difference
+     
+      
+    }
+    
+    console.log(calc('ifkhchlhfd'))
