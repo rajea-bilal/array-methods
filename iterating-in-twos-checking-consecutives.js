@@ -14,7 +14,7 @@
 // Test.assertEquals(pairs([-55, -56, -7, -6, 56, 55, 63, 62]),4);
 // Test.assertEquals(pairs([73, 72, 8, 9, 73, 72]),3);
   
-function pairs(array){
+function check(array){
   
  
     let result = 0
@@ -30,4 +30,4 @@ function pairs(array){
       
     
     
-    console.log(pairs([1,2,5,8,-4,-3,7,6,5]))
+    console.log(check([1,2,5,8,-4,-3,7,6,5]))
